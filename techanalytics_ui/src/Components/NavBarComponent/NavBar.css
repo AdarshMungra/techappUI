@@ -1,0 +1,99 @@
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for navigation links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    background-color: #3498db;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column; /* Change to column to stack links vertically */
+    width: 100%; /* Take full width of the screen */
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  /* Toggle button styling */
+  .navbar-toggler {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+/* Styling for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the input field */
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styling for the search button */
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Add more styling as needed */
